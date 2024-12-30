@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş / Kayıt</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2 id="formTitle">Hoş Geldiniz</h2>
+                <p id="formDescription">Hesabınıza giriş yapmak için bilgilerinizi girin</p>
+            </div>
+            
+            <form id="authForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" required placeholder="ornek@email.com">
+                        <i class="icon-mail"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" required placeholder="••••••••">
+                        <i class="icon-lock"></i>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitButton" class="submit-button">
+                    <span class="button-text">Giriş Yap</span>
+                    <div class="loader hidden"></div>
+                </button>
+
+                <button type="button" id="toggleAuth" class="toggle-button">
+                    Hesabınız yok mu? Kayıt olun
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
